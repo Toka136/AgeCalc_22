@@ -62,6 +62,20 @@ function calc_age()
     var res1=day2input-dayinput;
     var res2 =m2-m1;
     var res3=year2input-yearinput;
+    if(res2<0)
+    {
+        res3--;
+        res2=12+res2;
+    }
+    
+    if(res1<0)
+    {
+        res2--;
+        if(m2==1||m2==3||m2==5||m2==7||m2==8||m2==10||m2==12||m1==1||m1==3||m1==5||m1==7||m1==8||m1==10||m1==12);
+        res1++;
+        res1+=30;
+    }
+    
     document.getElementById('res').innerHTML=("You are " + res3 + " years ," + res2 + " Months and "+res1 + " Days")
     }
 }
