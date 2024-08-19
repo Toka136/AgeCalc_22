@@ -15,7 +15,7 @@ for(var i=1;i<=31;i++)
 {
     day_loop+=start + i + end; 
 }
-for(var i=1990;i<=2024;i++)
+for(var i=1960;i<=2024;i++)
 {
     year_loop+=start + i + end; 
 }
@@ -62,7 +62,7 @@ function calc_age()
     var res1=day2input-dayinput;
     var res2 =m2-m1;
     var res3=year2input-yearinput;
-    if(res2<0)
+    if(res2<=0)
     {
         res3--;
         res2=12+res2;
